@@ -324,10 +324,68 @@ function App() {
       <section id="about" className="bg-gray-100 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Tentang Kami</h2>
-          <p className="text-center text-xl text-gray-700 max-w-3xl mx-auto">
-            McDonald's adalah restoran cepat saji terkemuka di dunia dengan
-            lebih dari 37.000 lokasi di lebih dari 100 negara.
-          </p>
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Gambar */}
+            <div className="md:w-1/2">
+              <img
+                src="https://images.unsplash.com/photo-1606720335177-3d04e70fb13b?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Restoran McDonald's"
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
+            {/* Konten Teks */}
+            <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+              <p className="text-xl text-gray-700 mb-6">
+                McDonald's adalah restoran cepat saji terkemuka di dunia dengan
+                lebih dari <strong>37.000 lokasi</strong> di lebih dari{" "}
+                <strong>100 negara</strong>. Kami berkomitmen untuk memberikan
+                makanan berkualitas tinggi, layanan cepat dan ramah, serta
+                pengalaman bersantap yang menyenangkan bagi semua pelanggan
+                kami.
+              </p>
+              <p className="text-xl text-gray-700 mb-6">
+                Sejak didirikan pada tahun 1955, McDonald's telah menjadi bagian
+                dari komunitas lokal di seluruh dunia. Kami terus berinovasi
+                dengan menu yang beragam dan program keberlanjutan yang
+                bertujuan untuk memberikan dampak positif bagi lingkungan dan
+                masyarakat.
+              </p>
+              <p className="text-xl text-gray-700">
+                Misi kami adalah menyajikan makanan lezat dan menciptakan momen
+                kebahagiaan bagi setiap orang. Kami percaya pada pentingnya
+                kualitas, layanan, kebersihan, dan nilai (QSVC) dalam setiap
+                aspek bisnis kami.
+              </p>
+            </div>
+          </div>
+          {/* Bagian Statistik */}
+          <div className="mt-16">
+            <h3 className="text-3xl font-bold text-center mb-8">
+              Fakta Menarik
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="text-6xl font-bold text-red-600 mb-2">
+                  37,000+
+                </div>
+                <p className="text-xl text-gray-700">
+                  Restoran di Seluruh Dunia
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-6xl font-bold text-red-600 mb-2">
+                  69 Juta
+                </div>
+                <p className="text-xl text-gray-700">Pelanggan Setiap Hari</p>
+              </div>
+              <div className="text-center">
+                <div className="text-6xl font-bold text-red-600 mb-2">100+</div>
+                <p className="text-xl text-gray-700">
+                  Negara dengan McDonald's
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
